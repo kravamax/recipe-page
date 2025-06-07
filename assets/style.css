@@ -65,10 +65,10 @@ body {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: grid;
-  place-items: center;
+  align-content: center;
 
   font-family: var(--ff-primary);
   font-size: var(--fsz-s);
@@ -78,6 +78,8 @@ body {
   letter-spacing: 0;
 
   background-color: var(--clr-stone-100);
+
+  max-width: 38.5rem;
 }
 
 span.accent-color {
@@ -96,18 +98,14 @@ span.accent-color {
   display: block;
   background-color: var(--clr-stone-150);
   width: 100%;
-  height: 1px;
+  height: 0.0625rem;
 
   margin-block: var(--spacing-inner-second);
 }
 
-article {
-  max-width: 38.5rem;
-
+.header,
+.main {
   background-color: var(--clr-white);
-}
-
-.header {
 }
 
 .header__img {
@@ -170,8 +168,6 @@ article {
   margin-block-start: var(--spacing-main);
 }
 
-.ingredients__title {
-}
 .ingredients__list {
   margin-block-start: var(--spacing-inner-second);
   list-style: none;
@@ -193,10 +189,6 @@ article {
   color: var(--clr-brown-800);
 }
 
-.instructions__section {
-}
-.instructions__title {
-}
 .instructions__list {
   display: flex;
   flex-direction: column;
@@ -217,10 +209,6 @@ article {
   font-weight: var(--fw-accent);
 }
 
-.nutrition__section {
-}
-.nutrition__title {
-}
 .nutrition__text {
   margin-block-start: var(--spacing-inner-second);
 }
@@ -267,11 +255,16 @@ article {
 @media (min-width: 90rem) {
   body {
     min-height: 100vh;
-    padding: var(--spacing-second);
+    padding-block: var(--spacing-padding-desktop);
   }
 
-  article {
-    border-radius: 1.5rem;
+  .header {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+  }
+  .main {
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
   }
 
   .header__container {
