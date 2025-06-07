@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Young Serif';
+  src: url('./fonts/young-serif/YoungSerif-Regular.woff2') format('woff2'),
+    url('./fonts/young-serif/YoungSerif-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./fonts/outfit/static/Outfit-Regular.woff2') format('woff2'),
+    url('./fonts/young-serif/YoungSerif-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./fonts/outfit/static/Outfit-SemiBold.woff2') format('woff2'),
+    url('/fonts/outfit/static/Outfit-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./fonts/outfit/static/Outfit-Bold.woff2') format('woff2'),
+    url('./fonts/outfit/static/Outfit-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/outfit/Outfit-VariableFont_wght.woff2') format('woff2'),
+      url('./fonts/outfit/Outfit-VariableFont_wght.woff') format('woff'),
+      url('./fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+  }
+}
