@@ -59,8 +59,12 @@ img {
   display: block;
 }
 
+html,
 body {
-  height: 100vh;
+  min-height: 100%;
+}
+
+body {
   margin: 0;
   padding: 0;
   display: grid;
@@ -99,7 +103,6 @@ span.accent-color {
 
 article {
   max-width: 38.5rem;
-  margin: 0 auto;
 
   background-color: var(--clr-white);
 }
@@ -263,14 +266,11 @@ article {
 
 @media (min-width: 90rem) {
   body {
+    min-height: 100vh;
     padding: var(--spacing-second);
-    display: grid;
-    place-items: center;
   }
 
   article {
-    max-height: 100vh;
-
     border-radius: 1.5rem;
   }
 
